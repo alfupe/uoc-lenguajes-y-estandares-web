@@ -67,14 +67,11 @@ h2 {
 }
 
 a {
-    text-decoration: none;
-    color: #64620c;
-    font-weight: bold;
+    color: #003e11;
 }
 
 a:hover,
 a:focus {
-    color: #2c3e50;
     text-decoration: underline;
 }
 
@@ -94,14 +91,6 @@ abbr {
 abbr[title]:focus::after {
     content: "(" attr(title) ")";
     margin-left: 0.5em;
-}
-
-ul {
-
-}
-
-li {
-
 }
 /* ============ END BASE =========== */
 
@@ -153,13 +142,18 @@ li {
     transition: all 0.15s ease;
 }
 
-.main-navigation__item.main-navigation__item--active a {
+.main-navigation__item a:focus,
+.main-navigation__item a:hover {
     color: #003e11;
 }
 
-.main-navigation__item a:focus,
-.main-navigation__item a:hover {
+.main-navigation__item.main-navigation__item--active a {
     background-color: #00c045;
+    color: #ffffff;
+}
+
+.main-navigation__item.main-navigation__item--active a:hover {
+    background-color: #003e11;
     color: #ffffff;
 }
 /* ============ END MAIN NAVIGATION =========== */
@@ -262,5 +256,133 @@ tbody tr:nth-child(even) th {
 }
 /* ============ END TABLE =========== */
 
+/* ============ FORM =========== */
+form {
+    font-size: 0.9em;
+}
+
+form ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    height: 34px;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 0.75em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+    background-color: #98c769;
+    padding: 50px 20px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+legend {
+    position: absolute;
+    top: 20px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 30px;
+    font-size: 1em;
+    margin-right: 10px;
+    transition: background-color 0.15s ease;
+}
+
+input[type="submit"] {
+    background-color: #00c045;
+    color: #ffffff;
+}
+
+input[type="submit"]:hover {
+    background-color: #00a742;
+}
+
+input[type="reset"] {
+    background-color: #e6e6e6;
+}
+
+input[type="reset"]:hover {
+    background-color: #d2d2d2;
+}
+
+.form-group {
+
+}
+
+.form-group label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-group--inline label {
+    display: inline;
+}
+
+.fields-group {
+    margin-top: 20px;
+}
+
+.fields-group + .fields-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fields-group:last-child {
+    margin-bottom: 0;
+}
+
+.fields-group--inline > li {
+    display: inline-block;
+    width: 48.75%;
+}
+
+.fields-group--inline > li:nth-child(odd) {
+    margin-right: 10px;
+}
+
+.fields-group--inline > li:nth-child(even) {
+    margin-left: 10px;
+}
+
+.fields-group--full-width {
+    width: 100% !important;
+}
+
+.button-group {
+    margin-top: 20px;
+    text-align: center;
+}
+/* ============ END FORM =========== */
 
 

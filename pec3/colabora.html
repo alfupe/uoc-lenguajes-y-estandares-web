@@ -6,6 +6,34 @@
     <meta name="description"
           content="Rellena el siguiente formulario para estar informado de nuestras actividades y participar en ellas" />
     <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <script>
+        function someCheckboxIsChecked(changedCheckbox, checkboxes) {
+            var isChecked = false;
+            checkboxes.forEach(function (checkbox) {
+                if (changedCheckbox !== checkbox && checkbox.checked) {
+                    isChecked = true;
+                }
+            });
+
+            return isChecked;
+        }
+
+        document.addEventListener('DOMContentLoaded', function(event) {
+            var checkboxGroup = document.querySelector('.chekbox-group');
+            var checkboxes = checkboxGroup.querySelectorAll('[type="checkbox"]');
+
+            checkboxes.forEach(function (checkbox) {
+                //checkbox.removeAttribute('required');
+
+                checkbox.addEventListener('change', function (event) {
+                    checkbox.removeAttribute('required');
+                    if (!this.checked && !someCheckboxIsChecked(this, checkboxes)) {
+                        this.removeAttribute('required');
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <header class="main-header">
@@ -37,33 +65,40 @@
             <h1>Me gustaría colaborar, ¿cómo puedo hacerlo?</h1>
             <p>Rellena el siguiente formulario para estar informado de nuestras actividades y participar en ellas</p>
 
-            <form action="" method="post">
+            <form id="form" action="#" method="post">
                 <fieldset>
                     <legend>Datos personales</legend>
-                    <ul>
-                        <li>
-                            Nombre
+                    <ul class="fields-group--inline">
+                        <li class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" placeholder="Nombre" required>
                         </li>
-                        <li>
-                            Apellidos
+                        <li class="form-group">
+                            <label for="surname">Apellidos</label>
+                            <input type="text" name="surname" id="surname" placeholder="Apellidos" required>
                         </li>
-                        <li>
-                            Correo electrónico
+                        <li class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
                         </li>
-                        <li>
-                            Fecha de nacimiento
+                        <li class="form-group">
+                            <label for="birthday">Fecha de nacimiento</label>
+                            <input type="date" name="birthday" id="birthday" placeholder="Fecha de nacimiento" required>
                         </li>
-                        <li>
+                        <li class="fields-group fields-group--full-width">
                             Lugar de residencia
-                            <ul>
-                                <li>
-                                    Ciudad
+                            <ul class="fields-group--inline">
+                                <li class="form-group">
+                                    <label for="place">Ciudad</label>
+                                    <input type="text" name="place" id="place" placeholder="Ciudad" required>
                                 </li>
-                                <li>
-                                    Provincia
+                                <li class="form-group">
+                                    <label for="province">Provincia</label>
+                                    <input type="text" name="province" id="province" placeholder="Provincia" required>
                                 </li>
-                                <li>
-                                    País
+                                <li class="form-group">
+                                    <label for="country">País</label>
+                                    <input type="text" name="country" id="country" placeholder="País" required>
                                 </li>
                             </ul>
                         </li>
@@ -72,33 +107,55 @@
                 <fieldset>
                     <legend>Colaboración</legend>
                     <ul>
-                        <li>
-                            ¿En qué tipo de actividades estás más interesado? (selecciona entre):
-                            <ul>
-                                <li>Conferencias</li>
-                                <li>Foros</li>
-                                <li>Manifestaciones</li>
-                                <li>Redes sociales</li>
-                                <li>Iniciativas legislativas populares</li>
-                            </ul>
+                        <li class="form-group">
+                            <label for="activity">¿En qué tipo de actividades estás más interesado? (selecciona entre):</label>
+                            <select name="activity" id="activity" required>
+                                <option value="" selected>Selecciona una opción</option>
+                                <option value="conference">Conferencias</option>
+                                <option value="forum">Foros</option>
+                                <option value="strike">Manifestaciones</option>
+                                <option value="social-media">Redes sociales</option>
+                                <option value="legal">Iniciativas legislativas populares</option>
+                            </select>
                         </li>
-                        <li>
+                        <li class="fields-group">
                             ¿A qué nivel te gustaría colaborar? (puedes elegir varias opciones):
-                            <ul>
-                                <li>Recibir información</li>
-                                <li>Tomar parte en las actividades</li>
-                                <li>Participar en la organización</li>
-                                <li>Proponer nuevas actividades</li>
+                            <ul class="chekbox-group">
+                                <li class="form-group form-group--inline">
+                                    <input type="checkbox" id="info" name="info" value="info" required>
+                                    <label for="info">Recibir información</label>
+                                </li>
+                                <li class="form-group form-group--inline">
+                                    <input type="checkbox" id="participate" name="participate" value="participate" required>
+                                    <label for="participate">Tomar parte en las actividades</label>
+                                </li>
+                                <li class="form-group form-group--inline">
+                                    <input type="checkbox" id="organize" name="organize" value="organize" required>
+                                    <label for="organize">Participar en la organización</label>
+                                </li>
+                                <li class="form-group form-group--inline">
+                                    <input type="checkbox" id="proposal" name="proposal" value="proposal" required>
+                                    <label for="proposal">Proponer nuevas actividades</label>
+                                </li>
                             </ul>
                         </li>
-                        <li>
-                            Indica de forma breve (5 líneas máximo) si has participado previamente en alguna iniciativa relativa a la protección del medio ambiente
+                        <li class="form-group">
+                            <label for="comment">Indica de forma breve (5 líneas máximo) si has participado previamente
+                                en alguna iniciativa relativa a la protección del medio ambiente</label>
+                            <textarea id="comment" name="comment" rows="10" placeholder="Cuéntanos cómo has participado anteriormente" required></textarea>
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
-                    Botón de envío y de borrado de los datos introducidos
-                </fieldset>
+                <ul>
+                    <li class="form-group form-group--inline">
+                        <input type="checkbox" id="acceptance" name="acceptance" value="accept-policies" required>
+                        <label for="acceptance">Acepto la <a href="#">política de privacidad</a></label>
+                    </li>
+                    <li class="button-group">
+                        <input type="reset" value="Vaciar" />
+                        <input type="submit" value="Enviar" />
+                    </li>
+                </ul>
             </form>
         </div>
     </main>
