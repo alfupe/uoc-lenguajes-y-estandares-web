@@ -15,6 +15,7 @@ body {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 p {
@@ -23,9 +24,6 @@ p {
     text-align: justify;
 }
 
-i {
-    font-style: italic;
-}
 
 h1,
 h2 {
