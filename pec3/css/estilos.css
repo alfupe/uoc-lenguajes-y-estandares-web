@@ -24,7 +24,6 @@ p {
     text-align: justify;
 }
 
-
 h1,
 h2 {
     font-weight: 600;
@@ -151,10 +150,6 @@ abbr[title]:focus::after {
 /* ============ LOGO =========== */
 .logo {
     float: left;
-}
-
-.logo img {
-    display: block;
 }
 /* ============ END LOGO =========== */
 
