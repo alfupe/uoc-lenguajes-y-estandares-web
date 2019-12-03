@@ -1,9 +1,17 @@
 /* ============ VARIABLES =========== */
 :root {
-    --gray-900: #000000;
-    --gray-800: #191919;
-    --gray-700: #282828;
-    --gray-000: #ffffff;
+    --gray-900: #000000; /* color de la barra del menú */
+    --gray-800: #191919; /* color principal de fondo */
+    --gray-700: #2d2d2d; /* color fondo del pie y otros fondos */
+    --gray-300: #ddd; /* color de los bordes de tabla y placeholder */
+    --gray-200: #c2c2c2; /* color general de los textos */
+    --gray-000: #ffffff; /* color elementos en blanco */
+
+    --color-primary: #C3C; /* color morado básico */
+    --color-primary-hover: #C36; /* color hover de los enlaces */
+    --color-form-accent: #a8017b; /* color de las líneas de los campos del formulario y el  checkmark */
+
+    --main-font-family: 'Roboto', sans-serif;
 }
 /* ============ END VARIABLES =========== */
 /* ============ COMMON =========== */
@@ -14,6 +22,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--gray-800);
+    font-family: var(--main-font-family);
 }
 
 html,
@@ -22,25 +31,50 @@ html,
 *::after {
     box-sizing: border-box;
 }
+
+a {
+    color: var(--color-primary);
+    transition: all 0.15s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-primary-hover);
+}
 /* ============ END COMMON =========== */
-/* ============ LAYOUT =========== */
+
+/* ============ MAIN HEADER =========== */
 .main-header {
 
 }
+/* ============ END MAIN HEADER =========== */
 
+/* ============ MAIN CONTENT =========== */
 .main-content {
     flex: 2;
 }
+/* ============ END MAIN CONTENT =========== */
 
+/* ============ MAIN FOOTER =========== */
 .main-footer {
     background-color: var(--gray-700);
+    padding: 55px 0;
 }
 
+.main-footer > .boxed-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* ============ END MAIN FOOTER =========== */
+
+/* ============ BOXED CONTENT =========== */
 .boxed-content {
     max-width: 960px;
     margin: 0 auto;
 }
-/* ============ END LAYOUT =========== */
+/* ============ END BOXED CONTENT =========== */
 
 /* ============ MAIN NAVIGATION =========== */
 .main-navigation {
@@ -60,16 +94,39 @@ html,
 .main-navigation__items {
     list-style: none;
     padding-left: 0;
-    margin: 0;
     display: flex;
     align-items: center;
+    margin: 0 0 0 auto;
 }
 
-.main-navigation__item {
+.main-navigation__item a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.main-navigation__item a:hover {
 
 }
 
-.main-navigation__item--active {
+.main-navigation__item--active a {
+
+}
+
+.main-navigation__item--active a:hover {
 
 }
 /* ============ END MAIN NAVIGATION =========== */
+
+/* ============ BULLET SENTINELS =========== */
+.bullet-sentinels {
+    text-transform: uppercase;
+}
+
+.bullet-sentinels::before {
+    content: " · ";
+}
+
+.bullet-sentinels::after {
+    content: " · ";
+}
+/* ============ END BULLET SENTINELS =========== */

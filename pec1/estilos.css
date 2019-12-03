@@ -1,0 +1,148 @@
+/* ============ COLORES =========== */
+/* De mayor a menor brillo          */
+/* a) #FFFFFF;                      */ /* Fondo del artículo */
+/* b) #FFD78F;                      */ /* Fondo de página, textos meta (autor, fecha) */
+/* c) #FF6363;                      */ /* Títulos y enlaces */
+/* d) #AB3555;                      */ /* Otras voces */
+/* e) #801B41;                      */ /* Texto base del artículo */
+/* ============ END COLORES =========== */
+
+/* ============ BASE =========== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, Times, serif;
+    font-size: 16px;
+    background-color: #FFD78F;
+    color: #801B41;
+    line-height: 1.52; /* Si el texto base es 16px, el 152% es 25px de altura de línea */
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF6363;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+}
+
+a {
+    text-decoration: none;
+    color: #FF6363;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+abbr {
+    text-decoration: underline;
+}
+
+i {
+    font-weight: bold;
+    font-style: italic;
+    color: #AB3555;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 2em;
+    text-align: justify;
+    letter-spacing: 0.01em;
+}
+
+em {
+    font-style: normal;
+}
+
+em:before {
+    content: "“";
+}
+
+em:after {
+    content: "”";
+}
+/* ============ END BASE =========== */
+
+/* ============ CONTAINER =========== */
+.container {
+    width: 90%;
+    max-width: 970px;
+    margin: 0 auto; /*centramos el contenido horizontalmente*/
+    background-color: #FFFFFF;
+    padding: 2em;
+}
+/* ============ END CONTAINER =========== */
+
+/* ============ ARTICLE =========== */
+.article {
+
+}
+
+.article__header {
+    padding: 2em 0;
+    text-align: right;
+}
+
+.article__meta {
+    color: #FFD78F;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.article__author {
+    display: block;
+    color: inherit;
+    font-size: 1.2em;
+}
+
+.article__date {
+    display: block;
+    font-style: italic;
+}
+
+.article__body {
+
+}
+
+.article__body p:first-line {
+    text-indent: 2em;
+}
+
+.article__footer {
+    border-top: 1px solid #801B41;
+    margin-top: 4em;
+}
+/* ============ END ARTICLE =========== */
+
+/* ============ FOOTNOTE =========== */
+.footnote {
+    font-size: 0.85em;
+    padding: 1em 8% 0;
+}
+/* ============ END FOOTNOTE =========== */
+
+/* ============ PERSON NAME =========== */
+.proper-noun {
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: inherit;
+}
+/* ============ END PERSON NAME =========== */
