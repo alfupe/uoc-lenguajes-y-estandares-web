@@ -3,8 +3,8 @@
     --gray-900: #000000; /* color de la barra del menú */
     --gray-800: #191919; /* color principal de fondo */
     --gray-700: #2d2d2d; /* color fondo del pie y otros fondos */
-    --gray-300: #ddd; /* color de los bordes de tabla y placeholder */
-    --gray-200: #c2c2c2; /* color general de los textos */
+    --gray-300: #c2c2c2; /* color general de los textos */
+    --gray-200: #dddddd; /* color de los bordes de tabla y placeholder */
     --gray-000: #ffffff; /* color elementos en blanco */
 
     --color-primary: #C3C; /* color morado básico */
@@ -23,6 +23,8 @@ body {
     padding: 0;
     background-color: var(--gray-800);
     font-family: var(--main-font-family);
+    font-size: 16px;
+    color: var(--gray-300);
 }
 
 html,
@@ -102,10 +104,26 @@ a:hover {
 .main-navigation__item a {
     padding: 10px 15px;
     text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
-.main-navigation__item a:hover {
+.main-navigation__item a::after,
+.main-navigation__item--active a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
+.main-navigation__item a:hover::after,
+.main-navigation__item--active a::after {
+    opacity: 1;
+    background: radial-gradient(ellipse farthest-corner at center center, var(--color-primary-hover) 0%, transparent 100%);
 }
 
 .main-navigation__item--active a {
