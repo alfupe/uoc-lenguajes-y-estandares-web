@@ -1,0 +1,75 @@
+/* ============ VARIABLES =========== */
+:root {
+    --gray-900: #000000;
+    --gray-800: #191919;
+    --gray-700: #282828;
+    --gray-000: #ffffff;
+}
+/* ============ END VARIABLES =========== */
+/* ============ COMMON =========== */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--gray-800);
+}
+
+html,
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* ============ END COMMON =========== */
+/* ============ LAYOUT =========== */
+.main-header {
+
+}
+
+.main-content {
+    flex: 2;
+}
+
+.main-footer {
+    background-color: var(--gray-700);
+}
+
+.boxed-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* ============ END LAYOUT =========== */
+
+/* ============ MAIN NAVIGATION =========== */
+.main-navigation {
+    background-color: var(--gray-900);
+}
+
+.main-navigation > .boxed-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-navigation__brand {
+
+}
+
+.main-navigation__items {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-navigation__item {
+
+}
+
+.main-navigation__item--active {
+
+}
+/* ============ END MAIN NAVIGATION =========== */
