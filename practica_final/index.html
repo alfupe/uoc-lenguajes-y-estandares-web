@@ -8,12 +8,20 @@
     <link href="css/estilos.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <header class="main-header">
+    <header class="main-header main-header--tall">
+        <div class="main-header__claim">
+            <h1 class="main-header__title">Industrial en estado puro</h1>
+            <img src="img/cabecera1.jpg"
+                 height="650"
+                 width="1248"
+                 alt="Unrecht en el escenario de la Sala Caracol"
+            />
+        </div>
         <nav class="main-navigation">
-            <div class="boxed-content">
+            <div class="wrapped-content">
                 <a class="main-navigation__brand"
                    href="index.html"
-                   title="Ir a inicio">
+                   title="Ir a la página de inicio">
                     <img src="img/logo_menu.png"
                          width="162"
                          height="50"
@@ -22,32 +30,113 @@
                 </a>
                 <ul class="main-navigation__items">
                     <li class="main-navigation__item main-navigation__item--active">
-                        <a href="index.html">Inicio</a>
+                        <a href="index.html" title="Ir a la página de inicio">Inicio</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#">Próximos conciertos</a>
+                        <a href="#" title="Ir a la página de conciertos">Próximos conciertos</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="discos.html">Discos</a>
+                        <a href="discos.html" title="Ir a la página de discos">Discos</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="productos.html">Productos</a>
+                        <a href="productos.html" title="Ir a la página de productos">Productos</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="registrarse.html">Registrarse</a>
+                        <a href="registrarse.html" title="Ir a la página de registro">Registrarse</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#">Contactar</a>
+                        <a href="#" title="Ir a la página de contacto">Contactar</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main class="main-content">
-
+        <header class="main-content__header wrapped-content">
+            <img src="img/logo_inicio_grande.png"
+                 height="154"
+                 width="500"
+                 alt="Logo Unrecht"
+            />
+            <div class="social-media">
+                <h4>Síguenos en redes</h4>
+                <ul class="social-media__list">
+                    <li><a class="social-media__facebook" href="#" title="Síguenos en Facebook"></a></li>
+                    <li><a class="social-media__twitter" href="#" title="Síguenos en Twitter"></a></li>
+                    <li><a class="social-media__instagram" href="#" title="Síguenos en Instagram"></a></li>
+                    <li><a class="social-media__pinterest" href="#" title="Síguenos en Pinterest"></a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrapped-content">
+            <div class="blog-posts">
+                <div class="blog-posts__featured">
+                    <article>
+                        <h2>Última noticia</h2>
+                        <p>Se dice que Led Zeppelin utilizó esta técnica en su canción ’Stairway to Heaven’. Si
+                            reproduces una parte de la canción a la inversa, supuestamente puede escucharse “Oh here’s
+                            my sweet Satan. The one whose little path would make me sad, whose power is Satan. He’ll
+                            give those with him 666, there was a little toolshed where he made us suffer, sad
+                            satan”.</p>
+                        <a class="button button--outline" href="#">Leer más »</a>
+                    </article>
+                    <article>
+                        <h2>Próximos conciertos</h2>
+                        <p>Nuestro próximo concierto será en la Sala Sound Stage el próximo 11 de mayo a las 21 horas.
+                            Podrás escuchar el estreno oficial de nuestra canción Butterflies love each other”</p>
+                        <a class="button button--outline" href="#">Leer más »</a>
+                    </article>
+                    <article>
+                        <h2>Twitter</h2>
+                        <p>El twitter de la revista “black metal” ha dicho de nosotros en twitter “Una nueva forma de
+                            hacer industrial que recuerda a Ramstein pero con toques nostálgicos de Led Zeppeling. Un
+                            directo fantástico sin alardes tecnologicos”</p>
+                        <a class="button button--outline" href="#">Leer más »</a>
+                    </article>
+                </div>
+                <div class="blog-posts__latests">
+                    <article class="post-summary">
+                        <h2>Ya a la venta el primer disco bataclan.</h2>
+                        <div class="post-summary__content">
+                            <img src="img/foto1.jpg" height="169" width="300" alt="Actuación en directo" />
+                            <p>A partir de mañana día 20 puedes adquirir nuestro nuevo disco “bataclan” con nuestras últimas
+                                canciones. Si eres de los 100 primeros que lo hace, te enviares una camiseta del grupo y una
+                                sorpresa espacial. ¿Vas a aguantar sin saber de qué se trata? ¡¡Averigualo!!.</p>
+                            <a class="button button--outline button--small" href="#">comprar »</a>
+                        </div>
+                    </article>
+                    <article class="post-summary">
+                        <h2>La Moodswinger</h2>
+                        <div class="post-summary__content">
+                            <img src="img/foto2.jpg" height="225" width="400" alt="Actuación en directo" />
+                            <p>En nuestro ultimo disco hemos usado un nuevo instrumento, la Moodswinger es un instrumento de
+                                cuerda creado por Yuri Landman. Aunque en apariencia es similar a una guitarra eléctrica, es
+                                en realidad una cítara, ya que no tiene traste ni tampoco cuello. Se puede decir en resumen
+                                que es una cítara resonante de 12 cuerdas con un tercer puente.</p>
+                            <a class="button button-outline" href="#">comprar »</a>
+                        </div>
+                    </article>
+                    <article class="post-summary">
+                        <h2>Libro “historia negra del heavy”</h2>
+                        <div class="post-summary__content">
+                            <img src="img/foto3.jpg" height="225" width="400" alt="Actuación en directo" />
+                            <p>En 1985, Tipper Gore, activista y esposa del ex vicepresidente Al Gore, creó el PMRC, Parents
+                                Music Resource Center, una comunidad que tenía por objetivo la regularización de temáticas y
+                                actitudes en el mundo del rock. El grupo Slayer tiene un álbum titulado God hates us all. Al
+                                respecto, Tom Araya, quien se dice católico, confesó que "Dios no nos odia a todos, pero al
+                                momento de ponerle un título al álbum pensé que era una frase excelente, pues haría enojar a
+                                muchos". Por el contrario Kerry King, guitarrista, se denomina ateo, y asegura que "lo que
+                                busca su música es reflejar el mal del hombre que está en todas partes y dentro de él
+                                mismo".</p>
+                            <a class="button button-outline" href="#">comprar »</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="main-footer">
-        <div class="boxed-content">
+        <div class="wrapped-content">
             <div>© 2019 Unrech <span class="bullet-sentinels"><a href="#">Contactar</a></span></div>
             <div><a href="index.html">Ir al comienzo</a></div>
         </div>
