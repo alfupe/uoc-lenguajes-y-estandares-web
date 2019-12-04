@@ -69,6 +69,10 @@ p {
 p + p {
     margin-top: 20px;
 }
+
+figure {
+    margin: 0;
+}
 /* ============ END COMMON =========== */
 
 /* ============ MAIN HEADER =========== */
@@ -114,9 +118,43 @@ p + p {
 }
 
 .main-content__header {
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.main-content__title {
+    text-align: center;
+}
+
+.main-content__layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content__content {
+    flex: 3;
+    padding-right: 5px;
+}
+
+.main-content__sidebar {
+    margin-left: 5px;
+    margin-top: 100px;
+    background-color: var(--gray-700);
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+@media (max-width: 550px) {
+    .main-content__content {
+        margin-right: 0;
+    }
+
+    .main-content__sidebar {
+        margin-left: 0;
+    }
 }
 /* ============ END MAIN CONTENT =========== */
 
@@ -341,3 +379,57 @@ p + p {
 
 }
 /* ============ END BUTTONS =========== */
+
+/* ============ RECORDS GRID =========== */
+.records-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.records-grid__item {
+
+}
+
+.records-grid__figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.records-grid__image {
+    min-height: 230px;
+    object-fit: cover;
+    transition: all 5s ease-out;
+}
+
+.records-grid__item:hover .records-grid__image {
+    transform: scale(1.15);
+    transition: all 5s ease-out;
+}
+
+.records-grid__caption {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(45, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e3d1d6;
+    transition: opacity 0.15s ease;
+}
+
+.records-grid__item:hover .records-grid__caption {
+    opacity: 1;
+}
+
+.records-grid__record-name {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+/* ============ END RECORDS GRID =========== */
