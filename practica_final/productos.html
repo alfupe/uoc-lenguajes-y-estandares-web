@@ -28,10 +28,10 @@
                     <li class="main-navigation__item">
                         <a href="#" title="Ir a la página de conciertos">Próximos conciertos</a>
                     </li>
-                    <li class="main-navigation__item main-navigation__item--active">
+                    <li class="main-navigation__item">
                         <a href="discos.html" title="Ir a la página de discos">Discos</a>
                     </li>
-                    <li class="main-navigation__item">
+                    <li class="main-navigation__item main-navigation__item--active">
                         <a href="productos.html" title="Ir a la página de productos">Productos</a>
                     </li>
                     <li class="main-navigation__item">
@@ -51,105 +51,130 @@
             </header>
             <div class="main-content__layout">
                 <section class="main-content__content">
-                    <h2>Discografia</h2>
-                    <div class="records-grid">
-                        <a class="records-grid__item"
-                           href="productos.html#disco1"
-                           title="Clic ir a la comprar del Disco">
-                            <figure class="records-grid__figure">
-                                <img class="records-grid__image"
-                                     src="img/disco1.jpg"
-                                     height="626"
-                                     width="626"
-                                     alt="Disco 1"
-                                />
-                                <figcaption class="records-grid__caption">
-                                    <div class="records-grid__record-name">Disco 1</div>
-                                    Compra el disco
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a class="records-grid__item"
-                           href="productos.html#disco2"
-                           title="Clic ir a la comprar del Disco">
-                            <figure class="records-grid__figure">
-                                <img class="records-grid__image"
-                                     src="img/disco2.jpg"
-                                     height="298"
-                                     width="298"
-                                     alt="Disco 2"
-                                />
-                                <figcaption class="records-grid__caption">
-                                    <div class="records-grid__record-name">Disco 2</div>
-                                    Compra el disco
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a class="records-grid__item"
-                           href="productos.html#disco3"
-                           title="Clic ir a la comprar del Disco">
-                            <figure class="records-grid__figure">
-                                <img class="records-grid__image"
-                                     src="img/disco3.jpg"
-                                     height="674"
-                                     width="674"
-                                     alt="Disco 3"
-                                />
-                                <figcaption class="records-grid__caption">
-                                    <div class="records-grid__record-name">Disco 3</div>
-                                    Compra el disco
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a class="records-grid__item"
-                           href="productos.html#disco4"
-                           title="Clic ir a la comprar del Disco">
-                            <figure class="records-grid__figure">
-                                <img class="records-grid__image"
-                                     src="img/disco4.jpg"
-                                     height="300"
-                                     width="300"
-                                     alt="Disco 4"
-                                />
-                                <figcaption class="records-grid__caption">
-                                    <div class="records-grid__record-name">Disco 4</div>
-                                    Compra el disco
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a class="records-grid__item"
-                           href="productos.html#disco5"
-                           title="Clic ir a la comprar del Disco">
-                            <figure class="records-grid__figure">
-                                <img class="records-grid__image"
-                                     src="img/disco5.jpg"
-                                     height="300"
-                                     width="300"
-                                     alt="Disco 5"
-                                />
-                                <figcaption class="records-grid__caption">
-                                    <div class="records-grid__record-name">Disco 5</div>
-                                    Compra el disco
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a class="records-grid__item"
-                           href="productos.html#disco6"
-                           title="Clic ir a la comprar del Disco">
-                            <figure class="records-grid__figure">
-                                <img class="records-grid__image"
-                                     src="img/disco6.jpg"
-                                     height="383"
-                                     width="400"
-                                     alt="Disco 6"
-                                />
-                                <figcaption class="records-grid__caption">
-                                    <div class="records-grid__record-name">Disco 6</div>
-                                    Compra el disco
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
+                    <h2>Nuestros productos oficiales</h2>
+                    <h3>Catalogo de productos</h3>
+
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Datos</th>
+                                <th>Imagen</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="products-table__cell-heading">Producto</div>
+                                    <div class="products-table__cell-content">Camiseta Hombre</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Precio</div>
+                                    <div class="products-table__cell-content">18€</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Datos</div>
+                                    <div class="products-table__cell-content">Tallas de la S a la XXL</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Imagen</div>
+                                    <div class="products-table__cell-content">
+                                        <img src="img/producto1.jpg"
+                                             height="350"
+                                             width="350"
+                                             alt="Camiseta Hombre"
+                                        />
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="button button--outline button--small" href="#">Comprar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="products-table__cell-heading">Producto</div>
+                                    <div class="products-table__cell-content">Camiseta Mujer</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Precio</div>
+                                    <div class="products-table__cell-content">18€</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Datos</div>
+                                    <div class="products-table__cell-content">Tallas de ña XS a la L</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Imagen</div>
+                                    <div class="products-table__cell-content">
+                                        <img src="img/producto2.jpg"
+                                             height="768"
+                                             width="768"
+                                             alt="Camiseta Mujer"
+                                        />
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="button button--outline button--small" href="#">Comprar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="products-table__cell-heading">Producto</div>
+                                    <div class="products-table__cell-content">Chapas</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Precio</div>
+                                    <div class="products-table__cell-content">5€</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Datos</div>
+                                    <div class="products-table__cell-content">Pac 5 chapas</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Imagen</div>
+                                    <div class="products-table__cell-content">
+                                        <img src="img/producto3.jpg"
+                                             height="500"
+                                             width="500"
+                                             alt="Chapas"
+                                        />
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="button button--outline button--small" href="#">Comprar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="products-table__cell-heading">Producto</div>
+                                    <div class="products-table__cell-content">Parches</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Precio</div>
+                                    <div class="products-table__cell-content">5€</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Datos</div>
+                                    <div class="products-table__cell-content">Parche tela</div>
+                                </td>
+                                <td>
+                                    <div class="products-table__cell-heading">Imagen</div>
+                                    <div class="products-table__cell-content">
+                                        <img src="img/producto4.jpg"
+                                             height="317"
+                                             width="300"
+                                             alt="Parches"
+                                        />
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="button button--outline button--small" href="#">Comprar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </section>
                 <aside class="main-content__sidebar">
                     <h2>ven a nuestro próximo concierto</h2>

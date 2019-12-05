@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>TODO TODO TODO</title>
+    <meta name="description"
+          content="TODO TODO TODO" />
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="social-media">
+            <ul class="social-media__list">
+                <li><a class="social-media__facebook" href="#" title="Síguenos en Facebook"></a></li>
+                <li><a class="social-media__twitter" href="#" title="Síguenos en Twitter"></a></li>
+                <li><a class="social-media__instagram" href="#" title="Síguenos en Instagram"></a></li>
+                <li><a class="social-media__pinterest" href="#" title="Síguenos en Pinterest"></a></li>
+            </ul>
+        </div>
+        <nav class="main-navigation">
+            <div class="wrapped-content">
+                <a class="main-navigation__brand"
+                   href="index.html"
+                   title="Ir a la página de inicio">
+                    <img src="img/logo_menu.png"
+                         width="162"
+                         height="50"
+                         alt=""
+                    />
+                </a>
+                <ul class="main-navigation__items">
+                    <li class="main-navigation__item">
+                        <a href="index.html" title="Ir a la página de inicio">Inicio</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#" title="Ir a la página de conciertos">Próximos conciertos</a>
+                    </li>
+                    <li class="main-navigation__item main-navigation__item--active">
+                        <a href="discos.html" title="Ir a la página de discos">Discos</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="productos.html" title="Ir a la página de productos">Productos</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="registrarse.html" title="Ir a la página de registro">Registrarse</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#" title="Ir a la página de contacto">Contactar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="wrapped-content">
+            <header class="main-content__header">
+                <h1 class="main-content__title">unrecht, industrial en estado puro</h1>
+            </header>
+            <div class="main-content__layout">
+                <section class="main-content__content">
+                    <h2>Regístrate</h2>
+                    <p>Si te registras te enviaremos nuestro news letter con el que te mantendremos informado de todas
+                        nuestros conciertos y novedades.</p>
+                    <p>Además podrás acceder a descuentos, premios y muchas más sorpresas.</p>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Datos personales:</legend>
+                            <div class="form-group">
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="name" placeholder="escribe tu nombre y apellidos">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="escribe tu email">
+                            </div>
+                            <div class="form-group">
+                                <label for="birthdate">Fecha de nacimiento:</label>
+                                <input type="date" id="birthdate" name="birthdate">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Otros datos:</legend>
+                            <div class="form-group">
+                                <label for="interest">Selecciona el tema de tu interés:</label>
+                                <select id="interest" name="interest">
+                                    <option value="" selected>Ninguno en particular</option>
+                                    <option value="records">Discos</option>
+                                    <option value="upcoming-concerts">Próximos conciertos</option>
+                                    <option value="marketing">Marketing</option>
+                                    <option value="all">Todos</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="comments">Mensaje:</label>
+                                <textarea id="comments" name="comments" placeholder="Escribe tu mensaje"></textarea>
+                            </div>
+                            <div class="form-group form-group--inline">
+                                <input type="checkbox" id="acceptance" name="acceptances">
+                                <label for="acceptance">¿Aceptas las <a href="#">condiciones de privacidad</a>?</label>
+                            </div>
+                            <div class="button-group">
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Borrar datos</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+                <aside class="main-content__sidebar">
+                    <h2>ven a nuestro próximo concierto</h2>
+                    <img src="img/cartel.jpg"
+                         height="960"
+                         width="682"
+                         alt="Cartel del concierto del 11 de mayo de 2018 en la sala Sound Stage teloneando a Killus"
+                    />
+                    <div>
+                        Próximo día 11 de mayo a las 21:00 horas
+                        Sala Sound Stage
+                        Avda. de Brasil 5
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="wrapped-content">
+            <div>© 2019 Unrech <span class="bullet-sentinels"><a href="#">Contactar</a></span></div>
+            <div><a href="index.html">Ir al comienzo</a></div>
+        </div>
+    </footer>
+</body>
+</html>

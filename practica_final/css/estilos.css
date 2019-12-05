@@ -110,6 +110,13 @@ figure {
     line-height: 1.4em;
     transform: translateX(-60px) translateY(200px);
 }
+
+.main-header .social-media {
+    position: absolute;
+    z-index: 1;
+    right: 210px;
+    top: 10px;
+}
 /* ============ END MAIN HEADER =========== */
 
 /* ============ MAIN CONTENT =========== */
@@ -130,7 +137,6 @@ figure {
 
 .main-content__layout {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .main-content__content {
@@ -148,6 +154,10 @@ figure {
 }
 
 @media (max-width: 550px) {
+    .main-content__layout {
+        display: block;
+    }
+
     .main-content__content {
         margin-right: 0;
     }
@@ -433,3 +443,70 @@ figure {
     margin-bottom: 10px;
 }
 /* ============ END RECORDS GRID =========== */
+
+/* ============ PRODUCTS TABLE =========== */
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--gray-700);
+    color: var(--gray-300);
+}
+
+.products-table th {
+    width: 20%;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.products-table tbody td {
+    text-align: center;
+    padding: 15px;
+}
+
+.products-table tbody td img {
+    max-width: 109px;
+}
+
+.products-table tr {
+    border: 1px solid var(--gray-300);
+}
+
+.products-table__cell-heading {
+    text-transform: uppercase;
+    display: none;
+}
+
+@media (max-width: 550px) {
+    .products-table tbody td {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .products-table__cell-heading {
+        display: block;
+    }
+
+    .products-table thead {
+        display: none;
+    }
+
+    .products-table tr {
+        border: none;
+    }
+
+    .products-table tr td:last-child {
+        margin-bottom: 10px;
+        border: 1px solid var(--gray-300);
+    }
+
+    .products-table td {
+        border: 1px var(--gray-300);
+        border-style: solid solid none;
+        display: flex;
+    }
+
+    .products-table td .button {
+        margin-left: auto;
+    }
+}
+/* ============ END PRODUCTS TABLE =========== */
