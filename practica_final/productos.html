@@ -10,6 +10,14 @@
 </head>
 <body>
     <header class="main-header">
+        <div class="social-media">
+            <ul class="social-media__list">
+                <li><a class="social-media__facebook" href="#" title="Síguenos en Facebook"></a></li>
+                <li><a class="social-media__twitter" href="#" title="Síguenos en Twitter"></a></li>
+                <li><a class="social-media__instagram" href="#" title="Síguenos en Instagram"></a></li>
+                <li><a class="social-media__pinterest" href="#" title="Síguenos en Pinterest"></a></li>
+            </ul>
+        </div>
         <nav class="main-navigation">
             <div class="wrapped-content">
                 <a class="main-navigation__brand"
@@ -52,9 +60,8 @@
             <div class="main-content__layout">
                 <section class="main-content__content">
                     <h2>Nuestros productos oficiales</h2>
-                    <h3>Catalogo de productos</h3>
-
                     <table class="products-table">
+                        <caption>Catalogo de productos</caption>
                         <thead>
                             <tr>
                                 <th>Producto</th>
@@ -89,7 +96,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <a class="button button--outline button--small" href="#">Comprar</a>
+                                    <a class="button button--small" href="#">Comprar</a>
                                 </td>
                             </tr>
                             <tr>
@@ -116,7 +123,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <a class="button button--outline button--small" href="#">Comprar</a>
+                                    <a class="button button--small" href="#">Comprar</a>
                                 </td>
                             </tr>
                             <tr>
@@ -143,7 +150,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <a class="button button--outline button--small" href="#">Comprar</a>
+                                    <a class="button button--small" href="#">Comprar</a>
                                 </td>
                             </tr>
                             <tr>
@@ -170,23 +177,27 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <a class="button button--outline button--small" href="#">Comprar</a>
+                                    <a class="button button--small" href="#">Comprar</a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
                 <aside class="main-content__sidebar">
-                    <h2>ven a nuestro próximo concierto</h2>
-                    <img src="img/cartel.jpg"
-                         height="960"
-                         width="682"
-                         alt="Cartel del concierto del 11 de mayo de 2018 en la sala Sound Stage teloneando a Killus"
-                    />
-                    <div>
-                        Próximo día 11 de mayo a las 21:00 horas
-                        Sala Sound Stage
-                        Avda. de Brasil 5
+                    <div class="promo-widget">
+                        <h2 class="promo-widget__title">ven a nuestro próximo concierto</h2>
+                        <figure class="promo-widget__figure">
+                            <img src="img/cartel.jpg"
+                                 height="960"
+                                 width="682"
+                                 alt="Cartel del concierto del 11 de mayo de 2018 en la sala Sound Stage teloneando a Killus"
+                            />
+                            <figcaption class="promo-widget__details">
+                                <p>Próximo día 11 de mayo a las 21:00 horas</p>
+                                <p>Sala Sound Stage</p>
+                                <p>Avda. de Brasil 5</p>
+                            </figcaption>
+                        </figure>
                     </div>
                 </aside>
             </div>
