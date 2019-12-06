@@ -182,6 +182,7 @@ figure {
 }
 
 .main-content__title {
+    color: var(--gray-000);
     width: 100%;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--gray-700);
@@ -207,6 +208,22 @@ figure {
     flex: 1;
 }
 
+.main-content .social-media {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.main-content .social-media h4 {
+    width: 100%;
+    text-align: left;
+}
+
+.main-content .social-media__list {
+    position: static;
+}
+
 @media (max-width: 767px) {
     .main-content__layout {
         display: block;
@@ -214,20 +231,17 @@ figure {
 
     .main-content__sidebar {
         margin-top: 60px;
+        margin-left: 0;
     }
 
     .main-content__content {
         padding-right: 0;
     }
-
-    .main-content__sidebar {
-        margin-left: 0;
-    }
 }
 
 @media (max-width: 550px) {
     .main-content__header {
-        margin-bottom: 30px !important;
+        margin-bottom: 20px !important;
     }
 
     .main-content__header .social-media {
@@ -235,6 +249,17 @@ figure {
         bottom: 50px;
         display: flex;
         align-items: flex-start;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .main-content__header .social-media h4 {
+        width: auto;
+    }
+
+    .main-content__header .social-media__list {
+        position: static;
     }
 
     .main-content__header .big-brand {
@@ -243,12 +268,9 @@ figure {
         margin-bottom: 10px;
     }
 
-    .main-content__header .social-media__list {
-        position: static;
-    }
-
     .main-content__title {
         font-size: 1.8em;
+        border-bottom: none;
     }
 }
 /* ============ END MAIN CONTENT =========== */
@@ -772,7 +794,7 @@ form {
 
 fieldset {
     margin-bottom: 10px;
-    padding: 15px 20px 20px 15px;
+    padding: 15px;
 }
 
 legend {
@@ -807,7 +829,7 @@ select.form-control {
 
 .checkbox-group {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .checkbox-group input[type="checkbox"] {
@@ -886,12 +908,28 @@ select.form-control {
 
 }
 
+.columns-group__column--1 {
+    flex: 1;
+}
+
 .columns-group__column--2 {
     flex: 2;
 }
 
+.columns-group__column--3 {
+    flex: 4;
+}
+
 .columns-group__column--4 {
     flex: 4;
+}
+
+.columns-group__column--5 {
+    flex: 5;
+}
+
+.columns-group__column--6 {
+    flex: 6;
 }
 
 @media (max-width: 550px) {
@@ -910,17 +948,27 @@ select.form-control {
 
 }
 
-.promo-widget__figure {
-
+.promo-widget__figure img {
+    width: 100%;
+    display: block;
+    height: auto;
 }
 
 .promo-widget__details {
     margin-top: 20px;
 }
+
+@media (max-width: 767px) {
+    .promo-widget__title {
+        text-align: left;
+    }
+}
 /* ============ END PROMO WIDGET =========== */
 
 /* ============ BIG BRAND =========== */
-.big-brand {}
+.big-brand {
+    padding-right: 30px;
+}
 /* ============ END BIG BRAND =========== */
 
 /* ============ PAGES =========== */
@@ -928,6 +976,10 @@ select.form-control {
 
 .page--home {
 
+}
+
+.page--home .main-content__header {
+    display: block;
 }
 
 @media (max-width: 550px) {
