@@ -76,6 +76,22 @@ p + p {
 figure {
     margin: 0;
 }
+
+cite {
+    quotes: "“" "”" "‘" "’";
+}
+
+cite::before {
+    content: open-quote;
+}
+
+cite::after {
+    content: close-quote;
+}
+
+q {
+    font-style: italic;
+}
 /* ============ END COMMON =========== */
 
 /* ============ MAIN HEADER =========== */
@@ -369,10 +385,16 @@ figure {
 .navigation-sentinel {
     height: 1px;
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
     right: 0;
     background-color: transparent;
+}
+
+@media (max-width: 991px) {
+    .navigation-sentinel {
+        bottom: 55px;
+    }
 }
 
 @media (min-width: 551px) {
@@ -998,6 +1020,16 @@ select.form-control {
 
 .page--home .main-content__header {
     display: block;
+}
+
+.page--home .navigation-sentinel {
+    bottom: 145px;
+}
+
+@media (max-width: 991px) {
+    .page--home .navigation-sentinel {
+        bottom: 195px;
+    }
 }
 
 @media (max-width: 550px) {

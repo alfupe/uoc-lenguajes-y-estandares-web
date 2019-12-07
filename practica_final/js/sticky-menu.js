@@ -9,10 +9,10 @@ function observeNavigationMenu() {
             mainNavigation.classList.remove('main-navigation--is-stuck');
         }
     },
-        {
+        /*{
             root: null, // relative to document viewport
             rootMargin: '-145px', // margin around root. Values are similar to css property. Unitless values not allowed
-        });
+        }*/);
 
     observer.observe(navigationSentinel);
 }
