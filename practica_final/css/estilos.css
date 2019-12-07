@@ -92,6 +92,15 @@ cite::after {
 q {
     font-style: italic;
 }
+
+abbr {
+    text-decoration: none;
+}
+
+abbr[title]:focus::after {
+    content: "(" attr(title) ")";
+    margin-left: 0.5em;
+}
 /* ============ END COMMON =========== */
 
 /* ============ MAIN HEADER =========== */
@@ -872,6 +881,10 @@ select.form-control {
     margin-bottom: 40px;
 }
 
+.checkbox-group:focus-within label::before {
+    box-shadow: 0 0 1px 3px rgba(46, 104, 175, 0.85);
+}
+
 .checkbox-group input[type="checkbox"] {
     opacity: 0;
     position: absolute;
@@ -936,6 +949,14 @@ select.form-control {
 
 ::placeholder {
     color: var(--gray-000);
+}
+
+.form-feedback {
+    font-size: 1.4em;
+    background: var(--color-form-accent);
+    padding: 20px;
+    color: var(--gray-000);
+    text-align: center;
 }
 /* ============ END FORMS =========== */
 
