@@ -138,7 +138,7 @@ q {
     top: 10px;
 }
 
-@media (min-width: 551px) and (max-width: 1199px) {
+@media (min-width: 550px) and (max-width: 1199px) {
     .main-header__title {
         position: absolute;
         z-index: 1;
@@ -150,7 +150,7 @@ q {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 549px) {
     .main-header {
         margin-bottom: 0;
     }
@@ -255,7 +255,7 @@ q {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 549px) {
     .main-content__header {
         margin-bottom: 20px !important;
     }
@@ -397,7 +397,7 @@ q {
     }
 }
 
-@media (min-width: 551px) {
+@media (min-width: 550px) {
     .main-navigation--is-stuck {
         position: fixed;
         left: 0;
@@ -406,20 +406,20 @@ q {
     }
 }
 
-@media (min-width: 551px) and (max-width: 767px) {
+@media (min-width: 550px) and (max-width: 767px) {
     .main-navigation__item a {
         padding: 10px 5px;
         font-size: 13px;
     }
 }
 
-@media (min-width: 551px) and (max-width: 991px) {
+@media (min-width: 550px) and (max-width: 991px) {
     .main-navigation > .wrapped-content {
         display: block;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 549px) {
     .main-navigation {
         background-color: transparent;
     }
@@ -509,7 +509,7 @@ q {
     left: 0;
 }
 
-@media (min-width: 551px) {
+@media (min-width: 550px) {
     .burger {
         display: none;
     }
@@ -732,7 +732,7 @@ q {
     margin-bottom: 10px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 549px) {
     .records-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -778,7 +778,7 @@ q {
     display: none;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 549px) {
     .products-table tbody td {
         display: flex;
         justify-content: space-between;
@@ -972,7 +972,7 @@ select.form-control {
     flex: 6;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 549px) {
     .columns-group {
         display: block;
     }
@@ -1032,7 +1032,7 @@ select.form-control {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 549px) {
     .page--home .main-navigation {
         display: none;
     }
