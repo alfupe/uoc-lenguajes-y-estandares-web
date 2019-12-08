@@ -710,6 +710,7 @@ abbr[title]:focus::after {
     transition: all 5s ease-out;
 }
 
+.records-grid__item:focus .records-grid__image,
 .records-grid__item:hover .records-grid__image {
     transform: scale(1.15);
     transition: all 5s ease-out;
@@ -732,6 +733,7 @@ abbr[title]:focus::after {
     transition: opacity 0.15s ease;
 }
 
+.records-grid__item:focus .records-grid__caption,
 .records-grid__item:hover .records-grid__caption {
     opacity: 1;
 }
