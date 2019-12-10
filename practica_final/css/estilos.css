@@ -383,14 +383,6 @@ abbr[title]:focus::after {
     background: radial-gradient(ellipse farthest-corner at center center, var(--color-primary-hover) 0%, transparent 100%);
 }
 
-.main-navigation__item--active a {
-
-}
-
-.main-navigation__item--active a:hover {
-
-}
-
 .navigation-sentinel {
     height: 1px;
     position: absolute;
@@ -537,14 +529,6 @@ abbr[title]:focus::after {
 /* ============ END BULLET SENTINELS =========== */
 
 /* ============ SOCIAL MEDIA =========== */
-.social-media {
-
-}
-
-.social-media__title {
-
-}
-
 .social-media__list {
     position: absolute;
     margin: 0;
@@ -610,10 +594,6 @@ abbr[title]:focus::after {
 /* ============ END SOCIAL MEDIA =========== */
 
 /* ============ BLOG POSTS =========== */
-.blog-posts {
-
-}
-
 .blog-posts p {
     text-align: justify;
 }
@@ -967,10 +947,6 @@ select.form-control {
     display: flex;
 }
 
-.columns-group__column {
-
-}
-
 .columns-group__column--1 {
     flex: 1;
 }
@@ -1007,10 +983,6 @@ select.form-control {
     text-align: right;
 }
 
-.promo-widget__title {
-
-}
-
 .promo-widget__figure img {
     width: 100%;
     display: block;
@@ -1035,12 +1007,6 @@ select.form-control {
 /* ============ END BIG BRAND =========== */
 
 /* ============ PAGES =========== */
-.page {}
-
-.page--home {
-
-}
-
 .page--home .main-content__header {
     display: block;
 }
